@@ -1,12 +1,12 @@
 body {
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   font-family: sans-serif;
-  padding: 20px;
+  padding: 20px; /* Creates vertical and horizontal space padding for body*/
 }
 
 h1 {
   font-size: 40px;
-  margin-top: 0;
+  margin-top: 0; /* spacing from top */
   margin-bottom: 15px;
 }
 
@@ -14,7 +14,7 @@ h2 {
   font-size: 30px;
 }
 
-.established {
+.established { /* class selector for established class */
   font-style: italic;
 }
 
@@ -25,7 +25,7 @@ h1, h2, p {
 .menu {
   width: 80%;
   background-color: burlywood;
-  margin-left: auto;
+  margin-left: auto; 
   margin-right: auto;
   padding: 20px;
   max-width: 500px;
@@ -75,7 +75,7 @@ footer {
 }
 
 .address {
-  margin-bottom: 5px;
+  margin-bottom: 0px; /* Spacing from bottom*/
 }
 
 a {
@@ -83,13 +83,13 @@ a {
 }
 
 a:visited {
-  color: black;
+  color: black; /*Color of link when clicked*/
 }
 
 a:hover {
-  color: brown;
+  color: brown; /*color of link when hovered*/
 }
 
 a:active {
-  color: brown;
+  color: brown; /*color of link default */
 }

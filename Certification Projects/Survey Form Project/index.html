@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href=
+     "styles.css">
+  </head>
+  <body>
+    <div id="web-description">
+        <h1 id="title">VU Amsterdam Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us imporve our curriculum</p>
+    </div>
+    <form id="survey-form"> 
+      <fieldset>
+        <label for="name" id="name-label">Name</label>
+        <input type="text" placeholder="Enter your name" id="name" required/>
+      </fieldset>
+      <fieldset>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" placeholder="Enter your email" id="email" required/>
+      </fieldset>
+      <fieldset>
+        <label for="number" id="number-label">Age <span id="optional">(optional)</span></label>
+        <input type="number" placeholder="Age"  id="number" min="15" max="120"/>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown" id="dropdown-label">Which faculty do you study in?</label>
+          <select id="dropdown">
+            <option disabled selected value>(Select a faculty)</option>
+            <option value="social-sciences">Faculty of Social Sciences</option>
+            <option value="medicines">Faculty of Medicines</option>
+            <option value="science">Faculty of Science</option>
+            <option value="business">Faculty of Business and Economics</option>
+            <option value="humanities">Faculty of Humanities</option>
+            <option value="law">Faculty of Law</option>
+            <option value="theology">Faculty of Theology</option>
+          </select>
+      </fieldset>
+      <fieldset>
+        <legend>Would you recommend VU Amsterdam to international students?</legend>
+        <div>
+            <label for="definitely" class="label-radio" id="definitely-label"><input type="radio" name="recommend" value="definite"">Definitely</label>
+            
+        </div>
+        <div>
+            <label for="maybe" class="label-radio" id="maybe-label"><input type="radio" name="recommend" value="maybe">Maybe</label>
+        </div>
+        <div>
+            <label for="unsure" class="label-radio" id="unsure-label"><input type="radio" name="recommend" value="unsure">Not sure</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>What would you like to see improved within you faculty?</legend>
+        <div>
+            <label for="curriculum" class="label-checkbox" id="curriculum-label"><input type="checkbox" id="curriculum" value="curriculum">Curriculum</label>
+        </div>
+        <div>
+            <label for="lectures" class="label-checkbox" id="lectures-label"><input type="checkbox" id="lectures" value="lectures">Lectures</label>
+        </div>
+        <div>
+            <label for="facilities" class="label-checkbox" id="facilities-label"><input type="checkbox" id="facilities" value="facilities">Facilities</label>
+        </div>
+        <div>
+            <label for="study-association" class="label-checkbox" id="study-association-label"><input type="checkbox" id="study-association" value="study-association">Study Association</label>
+        </div>
+        <div>
+            <label for="exam-locations" class="label-checkbox" id="exam-locations-label"><input type="checkbox" id="exam-locations" value="exam-locations">Exam Locations</label>
+        </div>
+        <div>
+            <label for="other" class="label-checkbox" id="other-label"><input type="checkbox" id="other" value="other">Other</label>
+        </div>
+      </fieldset>  
+      <fieldset>
+        <div>
+            <legend>Include any comments below:</legend>
+            <textarea id="comments" rows="10" cols="50" placeholder="Enter your comment here..."></textarea>
+        </div>
+      </fieldset>
+      <div>
+        <input type="submit" value="Submit" id="submit"/>
+      </div>  
+    </form>
+  </body>
+</html>
