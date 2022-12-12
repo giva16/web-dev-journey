@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Root element-->
+  <head>
+    <meta charset="utf-8" /> <!-- Metadata to load other langauges -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--meta data to port to smaller displpays-->
+    <title>Cafe Menu</title>
+    <link href="style.css" rel="stylesheet"/> <!-- loading style sheet, we can also use link to load js files-->
+  </head>
+  <body>  <!--Body section of the page-->
+    <div class="menu"> <!--Use div tag for seperation of concerns-->
+      <header>
+        <h1>CAMPER CAFE</h1>
+        <p class="established">Est. 2020</p> <!-- Add classes to make css selection much easier-->
+      </header>
+      <hr> <!-- thematic break, usually a page break denoted by a line-->
+      <main> <!--main section, represents where the content data is nested within-->
+        <section> <!-- seperation of concern for texts-->
+          <h2>Coffee</h2>
+          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
+          <article class="item">                                                                      <!-- try to use article tags to represent each items-->
+            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Mocha</p><p class="price">4.50</p>
+          </article>
+        </section>
+        <section> <!--Dessert section seperated from coffee section-->
+          <h2>Desserts</h2>
+          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>  <!-- Image tag with source of image link and description-->
+          <article class="item">
+            <p class="dessert">Donut</p><p class="price">1.50</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cheesecake</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+          </article>
+        </section>
+      </main>
+      <hr class="bottom-line"> <!--Page line to sperate body from the footer section of the page-->
+      <footer>
+        <p>
+          <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a> <!--a tag to hyperlink a text, targe=_blank denotes that it opens on a new page-->
+        </p>
+        <p class="address">123 Free Code Camp Drive</p>
+      </footer>
+    </div>
+  </body>
+</html>
