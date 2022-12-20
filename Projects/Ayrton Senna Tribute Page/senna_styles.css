@@ -1,0 +1,122 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+#title {
+    font-size: 4rem;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+@media (max-width: 460px) {
+    #title {
+      font-size: 3.5rem;
+      line-height: 1.2;
+    }
+}
+
+#description {
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+@media (max-width: 460px) {
+    #description {
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+}
+
+#tribute-intro {
+    font-size: 3rem;
+    margin: 50px 0;
+}
+
+#main {
+    margin: 30px 10px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #eee;
+}
+
+@media (max-width: 460px) {
+    #main {
+        margin: 0;
+    }
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+#img-div {
+    background-color: white;
+    padding: 40px 0 10px 0;
+    margin: 0;
+}
+
+#img-caption {
+    margin: 20px 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+@media (max-width: 460px){
+    #img-caption {
+        font-size: 1.4rem;
+    }
+}
+
+ul {
+    max-width: 550px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+li {
+    margin: 1.6rem 0;
+}
+
+#quote {
+    max-width: 550px;
+    font-style: italic;
+    margin: 50px auto;
+    text-align: left;
+}
+
+#wiki-entry{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+a {
+    color: #477ca7;
+}
+  
+a:visited {
+    color: #74638f;
+}
+
+.bold {
+    font-weight: 800;
+}
+
