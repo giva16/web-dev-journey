@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <nav id="navbar">
+        <header id="nav-title">Java Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#hello_world">Hello world</a></li>
+            <li><a class="nav-link" href="#variables">Variables</a></li>
+            <li><a class="nav-link" href="#declaring_variables">Declaring variables</a></li>
+            <li><a class="nav-link" href="#constants">Constants</a></li>
+            <li><a class="nav-link" href="#if-else_statement">if-else statement</a></li>
+            <li><a class="nav-link" href="#for_statement">for statement</a></li>
+            <li><a class="nav-link" href="#while_statement">while statement</a></li>
+            <li><a class="nav-link" href="#method_declarations">Method declarations</a></li>
+            <li><a class="nav-link" href="#user_input/output">User input/output</a></li>
+            <li><a class="nav-link" href="#reference">Reference</a></li>
+        </ul>
+     </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <article>
+                <p>Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.</p>
+                <p>Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.</p>
+                <p><span class="bold">Platform:</span> Any hardware or software environment in which a program runs, is known as a platform. Since Java has a runtime environment (JRE) and API, it is called a platform.</p>
+            </article>
+        </section>
+        <section class="main-section" id="hello_world">
+            <header>Hello world</header>
+            <article>
+                <p>In this section, we will learn how to write the simple program of Java. We can write a simple hello Java program easily after installing the JDK.
+                    To create a simple Java program, you need to create a class that contains the main method. Let's understand the requirement first.</p>
+                <h3>The requirement for Java Hello World Example</h3>
+                <p>For executing any Java program, the following software or application must be properly installed.</p>
+                <ul>
+                    <li>Install the JDK if you don't have installed it, <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">download the JDK</a> and install it.</li>
+                    <li>Set path of the jdk/bin directory. <a href="https://www.javatpoint.com/how-to-set-path-in-java">http://www.javatpoint.com/how-to-set-path-in-java</a></li>
+                    <li>Create the Java program</li>
+                    <li>Compile and run the Java program</li>
+                </ul>
+                <h3>Creating Hello World Example</h3>
+                <p>Let's create the hello java program:</p>
+                <code>    class Simple{  
+                        public static void main(String args[]){  
+                         System.out.println("Hello Java");  
+                        }  
+                    }  </code>
+            </article>
+        </section>
+        <section class="main-section" id="variables">
+            <header>Variables</header>
+            <article>
+                <p>A variable is a container which holds the value while the Java program is executed. A variable is assigned with a data type.</p>
+                <p>Variable is a name of memory location. There are three types of variables in java: local, instance and static.</p>
+                <p>There are two types of data types in Java: primitive and non-primitive.</p>
+                <h3>Variable</h3>
+                <p>A variable is the name of a reserved area allocated in memory. In other words, it is a name of the memory location. It is a combination of "vary + able" which means its value can be changed.</p>
+                <img src="https://static.javatpoint.com/core/images/variable.png"/>
+                <h3>Types of Variables</h3>
+                <p>There are three types of variables in Java:</p>
+                <ul>
+                    <li>local variable</li>
+                    <li>instance variable</li>
+                    <li>static variable</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="declaring_variables">
+            <header>Declaring variables</header>
+            <article>
+                <h3>Declaring a static integer variable</h3>
+                <code> static int m=100;//static variable </code>
+                <h3>Declaring a local integer variable</h3>
+                <code> int m=100;//local variable </code>
+                <h3>Declaring an instance variable</h3>
+                <code>Student Bob = new Student("Bob", 15);//instance variable </code>
+            </article>
+        </section>
+        <section class="main-section" id="constants">
+            <header>Constants</header>
+            <article>
+                <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters. </p>
+                <code>final int accountID = 20; //variable cannot be re-assigned</code>
+            </article>
+        </section>
+        <section class="main-section" id="if-else_statement">
+            <header>if-else statement</header>
+            <article>
+                <p>The Java if statement is used to test the condition. It checks boolean condition: true or false. There are various types of if statement in Java.</p>
+                <ul>
+                    <li>if statement</li>
+                    <li>if-else statement</li>
+                    <li>if-else-if ladder</li>
+                    <li>nested if statement</li>
+                </ul>
+                <p></p>
+                <p class="bold">Syntax:</p>
+                <code>if(condition){ //code to be executed }</code>
+                <img src="https://static.javatpoint.com/images/core/if1.png"/>
+
+            </article>
+        </section>
+        <section class="main-section" id="for_statement">
+            <header>for statement</header>
+            <article>
+                <p>The Java for loop is used to iterate a part of the program several times. If the number of iteration is fixed, it is recommended to use for loop.</p>
+                <p>A simple for loop is the same as C/C++. We can initialize the variable, check condition and increment/decrement value. It consists of four parts:</p>
+                <ol>
+                    <li><span class="bold">Initialization:</span> It is the initial condition which is executed once when the loop starts. Here, we can initialize the variable, or we can use an already initialized variable. It is an optional condition.</li>
+                    <li><span class="bold">Initialization:</span> It is the second condition which is executed each time to test the condition of the loop. It continues execution until the condition is false. It must return boolean value either true or false. It is an optional condition.</li>
+                    <li><span class="bold">Increment/Decrement:</span> It increments or decrements the variable value. It is an optional condition.</li>
+                    <li><span class="bold">Statement:</span> The statement of the loop is executed each time until the second condition is false.</li>
+                </ol>
+                <p class="bold">Syntax:</p>
+                <code>
+                    for(initialization; condition; increment/decrement){
+                        //statement or code to be executed    
+                        }
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="while_statement">
+            <header>while statement</header>
+            <article>
+                <p>The Java while loop is used to iterate a part of the program repeatedly until the specified Boolean condition is true. As soon as the Boolean condition becomes false, the loop automatically stops.</p>
+                <p>The while loop is considered as a repeating if statement. If the number of iteration is not fixed, it is recommended to use the while loop.</p>
+                <p class="bold">Syntax:</p>
+                <code>while(condition){//code to be executed + incremente / decrement statement}</code>
+                <p class="bold">The different parts of do-while loop:</p>
+                <p>1. Condition: It is an expression which is tested. If the condition is true, the loop body is executed and control goes to update expression. When the condition becomes false, we exit the while loop.</p>
+                <p class="bold">Example:</p>
+                <p>i <=100</p>
+                <p>2. Update expression: Every time the loop body is executed, this expression increments or decrements loop variable.</p>
+                <p class="bold">Example:</p>
+                <p>i++;</p>
+                <p class="bold">Flowchart of Java While Loop</p>
+                <p>Here, the important thing about while loop is that, sometimes it may not even execute. If the condition to be tested results into false, the loop body is skipped and first statement after the while loop will be executed.</p>
+                <img src="https://static.javatpoint.com/core/images/java-while-loop.png"/>
+                </article>
+        </section>
+        <section class="main-section" id="method_declarations">
+            <header>Method declarations</header>
+            <article>
+                <p>
+                    In general, a method is a way to perform some task. 
+                    Similarly, the method in Java is a collection of instructions that performs a specific task. 
+                    It provides the reusability of code. We can also easily modify code using methods. 
+                    In this section, we will learn what is a method in Java, 
+                    types of methods, method declaration, and how to call a method in Java.
+                </p>
+                <h3>What is a method in Java?</h3>
+                <p>
+                    A method is a block of code or collection of statements or a set of code grouped together to 
+                    perform a certain task or operation. It is used to achieve the reusability of code. 
+                    We write a method once and use it many times. We do not require to write code again and again. 
+                    It also provides the easy modification and readability of code, just by adding or removing a 
+                    chunk of code. 
+                    The method is executed only when we call or invoke it
+                </p>
+                <p>The most important method in Java is the main() method. If you want to read more about the main() method</p>
+                <h3>Method Declaration</h3>
+                <p>The method declaration provides information about method attributes, such as visibility, return-type, name, and arguments. It has six components that are known as method header, as we have shown in the following figure.</p>
+                <img class="wide image" src="https://static.javatpoint.com/core/images/method-in-java.png"/>
+                <p><span class="bold">Method Signature:</span> Every method has a method signature. It is a part of the method declaration. It includes the method name and parameter list.</p>
+                <p><span class="bold">Access Specifier:</span> Access specifier or modifier is the access type of the method. It specifies the visibility of the method. Java provides four types of access specifier:</p>
+                <ul>
+                    <li><span class="bold">Public: </span>The method is accessible by all classes when we use public specifier in our application.</li>
+                    <li><span class="bold">Private: </span>When we use a private access specifier, the method is accessible only in the classes in which it is defined.</li>
+                    <li><span class="bold">Private: </span>When we use protected access specifier, the method is accessible within the same package or subclasses in a different package.</li>
+                    <li><span class="bold">Default: </span>When we do not use any access specifier in the method declaration, Java uses default access specifier by default. It is visible only from the same package only.</li>
+                </ul>
+                <p><span class="bold">Return Type: </span>Return type is a data type that the method returns. It may have a primitive data type, object, collection, void, etc. If the method does not return anything, we use void keyword.</p>
+                <p><span class="bold">Method Name: </span>It is a unique name that is used to define the name of a method. It must be corresponding to the functionality of the method. Suppose, if we are creating a method for subtraction of two numbers, the method name must be subtraction(). A method is invoked by its name.</p>
+                <p><span class="bold">Parameter List: </span>It is the list of parameters separated by a comma and enclosed in the pair of parentheses. It contains the data type and variable name. If the method has no parameter, left the parentheses blank.</p>
+                <p><span class="bold">Method Body: </span>It is a part of the method declaration. It contains all the actions to be performed. It is enclosed within the pair of curly braces.</p>
+            </article>
+        </section>
+        <section class="main-section" id="user_input/output">
+            <header>User input/output</header>
+            <article>
+                <p>Java I/O (Input and Output) is used to process the input and produce the output.</p>
+                <p>Java uses the concept of a stream to make I/O operation fast. The java.io package contains all the classes required for input and output operations.</p>
+                <p>We can perform file handling in Java by Java I/O API.</p>
+                <h3>Stream</h3>
+                <p>A stream is a sequence of data. In Java, a stream is composed of bytes. It's called a stream because it is like a stream of water that continues to flow.</p>
+                <p>In Java, 3 streams are created for us automatically. All these streams are attached with the console.</p>
+                <ol>
+                    <li><span class="bold">standard output</span> stream</li>
+                    <li><span class="bold">System.in:</span> standard input stream</li>
+                    <li><span class="bold">standard error</span> stream</li>
+                </ol>
+                <p>Let's see the code to print output and an error message to the console.</p>
+                <code>
+                    <p>System.out.println("simple message");</p>
+                    <p>System.err.println("error message");</p>
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="reference">
+            <header>Reference</header>
+            <article>
+                <p>All the documentation in this page is taken from <a href="https://www.javatpoint.com">javapoint.com</a></p>
+            </article>
+        </section>
+    </main>
+    
+</body>
+</html>
