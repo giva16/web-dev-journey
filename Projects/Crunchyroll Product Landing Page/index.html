@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"> 
+    <title>Crunchyroll</title>
+</head>
+<body>
+    <header class="flex-wrapper" id="header">
+        <nav class="flex-wrapper" id="nav-bar">
+            <img id="nav-logo" 
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Crunchyroll.svg/512px-Crunchyroll.svg.png?20200207044103"
+            loading="lazy"
+            alt="crunchyroll logo"
+            />
+            <ul>
+                <li><a class="nav-link" href="#learn-more">Features</a></li>
+                <li><a class="nav-link" href="#how-link">How does it work?</a></li>
+               <li><a class="nav-link" href="#premium-anchor">Premium plans</a></li>
+            </ul>
+        </nav>
+        <img id="header-img">
+    </header>
+    <main>
+        <section class="flex-wrapper column" id="registration" action="https://www.freecodecamp.com/email-submit" method="GET">
+            <img id="registration-logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Crunchyroll.svg/512px-Crunchyroll.svg.png?20200207044103" 
+            alt="large crunchyroll logo"
+            loading="lazy" />
+            <form class="flex-wrapper column" id="form">
+                <h2 id="registration-header">Start Exploring Anime Series and Dramas Now</h2>
+                <input type="email" 
+                placeholder="Enter your e-mail address"
+                id="email" 
+                required/>
+                <input type="submit"
+                class="capitalize"
+                id="submit" 
+                type="submit" 
+                value="Get Started" />
+            </form>
+        </section>
+        <section id="membership-prompt" class="flex-wrapper column">
+            <header>The World's Largest <br> Anime Collection</header>
+            <p id="premium-link"><a class="button-link filled" href="#premium-plans">View Premium Plans</a></p>
+            <p id="learn-more"><a class="prompt-link" href="#premium-features">Learn more ↓</a></p>
+        </section>
+        </section>
+        <section class="features flex-wrapper column" id="free-features">
+            <header class="features-header">What You'll Get with a Free Membership</header>
+            <ul class="features-list flex-wrapper">
+                <li>
+                    <img class="features-icon" 
+                    src = "https://img.icons8.com/officel/512/hd-720p.png" 
+                    alt="HD logo"
+                    width="100"/>
+                    <p>Watch Anime Series with up to 720p Video Quality</p>
+                </li>
+                <li>
+                    <img class="features-icon" 
+                    src = "https://www.svgrepo.com/show/408354/clock-time.svg" 
+                    alt="Time logo"
+                    width="100"/>
+                    <p>Watch Episodes 1 Week After its Release</p>
+                </li>
+                <li>
+                    <img class="features-icon" 
+                    src = "https://img.icons8.com/external-icongeek26-outline-gradient-icongeek26/512/external-ads-ads-icongeek26-outline-gradient-icongeek26-1.png" 
+                    alt="Ad Image"
+                    width="100"/>
+                    <p>Watch With Ads</p>
+                </li>
+            </ul>
+        </section>
+        <section class="features flex-wrapper column" id="premium-features">
+            <header class="features-header">Get More with Premium</header>
+            <a class="prompt-link" href="#premium-plans">Compare Plans ↓</a>
+            <ul class="features-list flex-wrapper">
+                <li>
+                    <img class="features-icon" 
+                    src = "https://www.svgrepo.com/show/408354/clock-time.svg" 
+                    alt="Time logo"
+                    width="100"/>
+                    <p>New episodes one hour after airing in Japan</p>
+                </li>
+                <li>
+                    <img class="features-icon" 
+                    src = "https://www.svgrepo.com/show/401464/exclamation-mark.svg" 
+                    alt="exclamation mark"
+                    width="100"/>
+                    <p>Ad-free anime</p>
+                </li>
+                <li>
+                    <img class="features-icon" 
+                    src = "https://www.svgrepo.com/show/120601/aeroplane.svg" 
+                    alt="Airplane Logo"
+                    width="100"/>
+                    <p>Offline Viewing</p>
+                </li>
+                <li>
+                    <img class="features-icon" 
+                    src = "https://www.reshot.com/preview-assets/icons/G8NRUYMEQ9/computer-G8NRUYMEQ9.svg" 
+                    alt="Computer Logo"
+                    width="100"/>
+                    <p id="how-link">Simultaneously stream on multiple devices</p>
+                </li>
+            </ul>
+        </section>
+        <section id="how" class="flex-wrapper column">
+            <header>How does crunchyroll work?</header>
+            <iframe
+            id="video" 
+            src="https://www.youtube.com/embed/JQN44ia2ceI" 
+            frameborder="0"  
+            allowfullscreen>
+            </iframe>
+            <span id="premium-anchor"></span>
+        </section>
+        <section id="premium-plans" class="flex-wrapper">
+            <div class="premium-plan flex-wrapper column">
+                <header class="plan-header">Fan</header>
+                <p class="price">€6.99/mo</p>
+                <p class="vat">Vat inclusive</p>
+                <p id="premium-link"><a class="button-link">Start 14-day free trial</a></p>
+                <p class="description"></p>
+                <p class="plus"></p>
+                <ul class="plan-list">
+                    <li>Stream on 1 device at a time</li>
+                </ul>
+            </div>
+            <div class="premium-plan featured flex-wrapper column">
+                <h3 class="featured-header">*Most Popular*</h3>
+                <header class="plan-header">Mega fan</header>
+                <p class="price">€9.99/mo</p>
+                <p class="vat">Vat inclusive</p>
+                <p id="premium-link"><a class="button-link filled" >Start 14-day free trial</a></p>
+                <p class="description"></p>
+                <p class="plus"></p>
+                <ul class="plan-list">
+                    <li>Stream on up to 4 devices at a time</li>
+                    <li>Offline Viewing</li>
+                    <li>$15 off $100+ purchase in the Crunchyroll Store every 3 months*</li>
+                </ul>
+            </div>
+            <div class="premium-plan flex-wrapper column">
+                <header class="plan-header">Mega fan</header>
+                <p class="price">€99.99/yr</p>
+                <p class="vat">Vat inclusive</p>
+                <p id="premium-link"><a class="button-link" >Start 14-day free trial</a></p>
+                <p class="description"></p>
+                <p class="plus"></p>
+                <ul class="plan-list">
+                    <li>Stream on up to 4 devices at a time</li>
+                    <li>Offline Viewing</li>
+                    <li>$15 off $100+ purchase in the Crunchyroll Store every 3 months*</li>
+                    <li>16% discount on Monthly Plan (billed every 12-months)</li>
+                </ul>
+            </div>
+            <p class="plan-disclaimer">Plan automatically renews after trial period at the price selected in the plan comparison. You may cancel at any time. Restrictions and other terms apply, including changes to price and content, features.</p>
+        </section>
+        <section id="help-center" class="flex-wrapper column">
+            <header id="help-header">Questions?</header>
+            <p>Visit our <a href="https://help.crunchyroll.com/hc/en-us">Help Center</a> to learn more.</p>
+            <p class="help-disclaimer">*Device and content availability vary by country or region. Manga is only available in English.</p>
+        </section>
+    </main>
+    <footer class="flex-wrapper column">
+        <section id="faq" class="flex-wrapper">
+            <ul id="faq-links">
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Cookie Consent Tool</a></li>
+                <li><a href="">AdChoices</a></li>
+                <li><a href="">Your Privacy Choices</a></li>
+            </ul>
+        </section>
+        <div id="language-bar" class="flex-wrapper">
+            <p id="copyright">© Ellation, LLC</p>
+            <label for="languages" class="sr-only">Language:</label>
+            <select id="languages" name="language">
+                <option value="english">English (US)</option>
+                <option value="sp-latam">Español</option>
+                <option value="spanish">Español (España)</option>
+                <option value="portuguese">Português</option>
+                <option value="pr-brazil">Português (Brasil)</option>
+                <option value="french">Français (France)</option>
+                <option value="german">Deutsch</option>
+                <option value="arabic">اَلْعَرَبِيَّةُ</option>
+                <option value="italian">Italiano</option>
+                <option value="russian">Pусский</option>
+            </select>
+        </div>
+    </footer>
+</body>
+</html>

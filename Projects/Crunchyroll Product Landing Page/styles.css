@@ -1,0 +1,561 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif, serif;
+    background-color: #000814;
+    color: white;
+}
+
+section {
+    margin-top: 8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.flex-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sr-only {
+    text-indent: -9999px;                 /* sends the text off-screen */
+    background-image: url(/the_img.png);  /* shows image */
+    white-space: nowrap;  
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    padding: 0 50px;
+    width: 100%;
+    height: 8rem;
+    background-color: #000814;
+    margin-bottom: 100px;
+}
+#nav-bar {
+    width: 80%;
+    height: 100%;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+#nav-bar ul {
+    margin-right: 2rem;
+    list-style: none;
+}
+
+#nav-bar li {
+    display: inline-block;
+    margin: 0 1.5rem;
+}
+
+#nav-logo {
+    margin-top: 1rem;
+    width: 200px;
+}
+
+#nav-bar a {
+    font-size: 1.8rem;
+    color: white;
+}
+
+#registration-logo {
+    width: 800px;
+}
+
+#registration {
+    height: 300px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#form {
+    height: 50%;
+    justify-content: space-evenly;
+}
+
+#registration-header {
+    font-size: 2rem;
+}
+
+#registration input[type="email"] {
+    width: 300px;
+    height: 30px;
+    font-size: 1.6rem;
+}
+
+#registration input[type="submit"] {
+    width: 180px;
+    height: 30px;
+    background-color: rgb(247, 127, 0);
+    border: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#registration input[type="submit"]:hover{
+    background-color: rgb(180, 127, 0);
+    cursor: pointer;
+}
+
+#membership-prompt header {
+    width: 100%;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+#premium-link {
+    margin: 30px 0;
+}
+
+.prompt-link{
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: rgb(247, 127, 0);
+}
+.prompt-link:hover {
+    cursor: pointer;
+}
+.button-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    border: 1px solid white;
+    padding: 10px 30px;
+    border: orange 1px solid;
+}
+
+.button-link:hover {
+    background-color: rgb(180, 127, 0);
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.filled {
+    background-color: rgb(247, 127, 0);
+    color: black;
+    font-weight: bold;
+    border: none;
+}
+
+#membership-prompt {
+    width: 100%;
+    height: 300px;
+}
+
+.features header {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.features p {
+    margin-top: 2rem;
+}
+
+
+.features ul {
+    margin-top: 5rem;
+    justify-content: space-between;
+    width: 80%;
+}
+.features li {
+    text-align: center;
+    width: 30%;
+    margin-right: 3rem;
+    font-size: 1.6rem;
+    display: inline-block;
+}
+
+.features {
+    padding: 50px 30px;
+}
+
+
+.capitalize {
+    text-transform: uppercase;
+}
+
+.column {
+    flex-direction: column;
+}
+
+#how {
+    justify-content: flex-start;
+    color: #000814;
+    height: 500px;
+    background-color: rgba(222, 226, 230, 0.8);
+    padding: 3rem 0;
+}
+
+#how header {
+    margin: 3rem 0;
+    font-size: 5rem;
+}
+
+#how iframe {
+    height: 400px;
+    width: 640px;
+}
+
+#premium-plans {
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.premium-plan {
+    padding: 50px 20px;
+    margin-bottom: 4rem;
+    margin-right:  2rem;
+    border: white solid 1px;
+}
+
+.premium-plan:last-of-type {
+    margin-right: 0;
+}
+
+.premium-plan header {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.premium-plan p {
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 3rem;
+}
+
+.plan-disclaimer {
+    font-size: 1.6rem;
+    width: 50%;
+    text-align: center;
+}
+
+.plan-list {
+    align-self: flex-start;
+    width: 30rem;
+    margin-left: 3rem;
+    font-size: 1.6rem;
+    list-style-type: none;
+    text-align: center;
+}
+
+.plan-list li {
+    margin-top: 2rem;
+}
+
+.featured {
+    padding-top: 10px;
+    border: 3px orange solid;
+}
+
+.featured-header {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#help-center {
+    text-align: center;
+
+}
+
+#help-center p {
+    margin-top: 2rem;
+}
+
+#help-center p:first-of-type {
+    font-size: 1.8rem;
+}
+
+#help-center a {
+    color: orange;
+}
+
+.help-disclaimer {
+    font-size: 1.6rem;
+}
+#help-header {
+    font-size: 3rem;
+}
+
+#faq {
+    margin-bottom: 8rem;
+}
+
+
+#faq ul {
+    text-align: center;
+}
+
+#faq li {
+    font-size: 1.6rem;
+    margin-right: 20px;
+    display: inline;
+}
+
+#faq a {
+    color: orange;
+}
+
+#faq li:last-of-type {
+    margin-right: 0;
+}
+
+#faq li:last-of-type::after {
+    content: "";
+    margin-left: 0;
+}
+
+#faq li::after {
+    margin-left: 20px;
+    content: '|';
+}
+
+footer {
+    margin-bottom: 4rem;
+}
+
+#copyright {
+    font-size: 1.6rem;
+    letter-spacing: 0.8px;
+}
+
+#language-bar {
+    width: 90%;
+    justify-content: space-between;
+}
+
+#language-bar select {
+    font-size: 1.8rem;
+    border-radius: 0;
+    border: rgb(180, 119, 5) 2px;
+    border-style: ridge;
+    padding: 0.5rem;
+    background-color: rgb(221, 218, 218);
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #premium-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .premium-plan {
+        margin-right: 0;
+    }
+    
+}
+@media only screen and (max-width: 850px) {
+
+    #faq ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .plan-list {
+        margin-left: 2rem;
+    }
+
+    .plan-disclaimer {
+        font-size: 1.4rem;
+    }
+
+    .help-disclaimer {
+        font-size: 1.2rem;
+    }
+
+    #how {
+        height: 480px;
+        padding: 0;
+    }
+
+    #how header {
+        font-size: 4rem;
+    }
+
+    #how iframe {
+        height: 320px;
+        width: 480px;
+    }
+
+    #membership-prompt header {
+        font-size: 4rem;
+    }
+
+    #registration-logo {
+        width: 400px;
+    }
+    #header {
+        height: 100px;
+        padding: 0;
+    }
+
+    #nav-bar {
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #nav-bar ul {
+        text-align: center;
+    }
+
+    #nav-bar li {
+        margin-top: 2rem;
+    }
+
+    #registration {
+        margin-top: 120px;
+    }
+
+    #registration-header {
+        font-size: 1.6rem;
+    }
+
+    .features img {
+        width: 70px;
+    }
+
+    .features li {
+        font-size: 1.4rem;
+    }
+
+    .features header {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    #language-bar {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    #language-bar select {
+        margin-top: 4rem;
+        width: 100%;
+        height: 4rem;
+    }
+
+    #faq ul {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #faq li {
+        font-size: 1.4rem;
+        margin: 0;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    #faq li::after {
+        content: "";
+        margin: 0;
+    }
+    .plan-disclaimer {
+        width: 90%;
+        line-break: strict;
+        font-size: 1.2rem;
+    }
+
+    .help-disclaimer {
+        width: 90%;
+    }
+
+    #how {
+        height: 420px;
+    }
+    #how iframe {
+        width: 380px;
+        height: 300px;
+    }
+
+    #how header {
+        font-size: 3rem;
+    }
+
+    section {
+        margin-top: 4rem;
+        padding: 0;
+    }
+
+    .features header {
+        margin-bottom: 0;
+        font-size: 2rem;
+    }
+
+    #membership-prompt header {
+        font-size: 3rem;
+    }
+
+    #header {
+        height: 200px;
+    }
+    #nav-bar li {
+        display: block;
+    }
+
+    #registration {
+        margin-top: 220px;
+    }
+
+    .features {
+        padding: 0;
+        padding-bottom: 2rem;
+    }
+
+    .features li {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        text-align: left;
+        margin-top: 4rem;
+    }
+
+    .features p {
+        margin-right: 100px;
+        width: 30%;
+        align-self: center;
+    }
+
+    .features img {
+        margin: 0;
+        align-self: center;
+    }
+
+    .features ul {
+        margin-top: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+}
